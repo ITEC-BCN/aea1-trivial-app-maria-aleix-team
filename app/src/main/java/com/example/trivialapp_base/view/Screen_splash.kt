@@ -15,10 +15,4 @@ import com.example.trivialapp_base.R
 
 @Composable
 fun SplashScreen(navController: NavController) {
-    Box(modifier = Modifier
-        .fillMaxSize()) {
-        Image(painter = painterResource(id = R.drawable.logo),
-            contentDescription = "Logo",)
-        Text("Trivia Masters: Pokémon & Marvel")
-    }
 }
