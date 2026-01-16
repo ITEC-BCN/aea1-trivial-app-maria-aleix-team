@@ -16,7 +16,7 @@ data class Pregunta(
 object ProveedorPreguntas {
     fun obtenerPreguntas(): MutableList<Pregunta> {
         return mutableListOf(
-            // Nivel Facil
+            //Nivel Facil
             Pregunta("¿Cuál es el Pokémon número 25 en la Pokédex?", "Pokemon", "Facil", "Bulbasaur", "Charmander", "Jigglypuff", "Pikachu", "Pikachu"),
             Pregunta("¿Qué tipo de Pokémon es Charmander?", "Pokemon", "Facil", "Agua", "Planta", "Eléctrico", "Fuego", "Fuego"),
             Pregunta("¿Cuál es la evolución final de Bulbasaur?", "Pokemon", "Facil", "Ivysaur", "Venusaur", "Charmander", "Gloom", "Venusaur"),
@@ -29,7 +29,7 @@ object ProveedorPreguntas {
             Pregunta("¿Qué superhéroe fue picado por una araña radioactiva?", "Marvel", "Facil", "Ant-Man", "Wolverine", "Hawkeye", "Spider-Man", "Spider-Man"),
             Pregunta("¿Qué color es la piel de Hulk?", "Marvel", "Facil", "Rojo", "Azul", "Gris", "Verde", "Verde"),
 
-            // Nivel Medio
+            //Nivel Medio
             Pregunta("¿Qué tipo de Pokémon es Gengar?", "Pokemon", "Medio", "Psíquico/Siniestro", "Normal", "Dragón", "Fantasma/Veneno", "Fantasma/Veneno"),
             Pregunta("¿Cuántos Pokémon originales había en la primera generación?", "Pokemon", "Medio", "100", "250", "386", "151", "151"),
             Pregunta("¿Qué Pokémon legendario representa al tiempo?", "Pokemon", "Medio", "Palkia", "Giratina", "Arceus", "Dialga", "Dialga"),
@@ -42,7 +42,7 @@ object ProveedorPreguntas {
             Pregunta("¿Cómo se llama la hermana de Wanda Maximoff (en los cómics)?", "Marvel", "Medio", "Jean Grey", "Hope Summers", "Rogue", "Polaris", "Polaris"),
             Pregunta("¿Qué héroe lidera normalmente a los X-Men?", "Marvel", "Medio", "Wolverine", "Tormenta", "Bestia", "Cíclope", "Cíclope"),
 
-            // Nivel Dificil
+            //Nivel Dificil
             Pregunta("¿Qué Pokémon puede aprender el movimiento 'Transformación'?", "Pokemon", "Dificil", "Mew", "Zorua", "Smeargle", "Ditto", "Ditto"),
             Pregunta("¿Cuál es el tipo dual de Lucario?", "Pokemon", "Dificil", "Lucha/Siniestro", "Acero/Psíquico", "Roca/Lucha", "Lucha/Acero", "Lucha/Acero"),
             Pregunta("¿Qué región fue introducida en Pokémon Diamante y Perla?", "Pokemon", "Dificil", "Kalos", "Johto", "Unova", "Sinnoh", "Sinnoh"),
@@ -54,7 +54,6 @@ object ProveedorPreguntas {
             Pregunta("¿Qué metal compone el escudo del Capitán América?", "Marvel", "Dificil", "Adamantium", "Carbonadio", "Titanio", "Vibranium", "Vibranium"),
             Pregunta("¿Cuál es el verdadero nombre de la Viuda Negra?", "Marvel", "Dificil", "Yelena Belova", "Maria Hill", "Carol Danvers", "Natasha Romanoff", "Natasha Romanoff"),
             Pregunta("¿Qué organización secreta reemplazó a S.H.I.E.L.D. en algunas historias?", "Marvel", "Dificil", "HYDRA", "A.I.M.", "Roxxon", "S.W.O.R.D.", "S.W.O.R.D.")
-
         )
     }
 }
