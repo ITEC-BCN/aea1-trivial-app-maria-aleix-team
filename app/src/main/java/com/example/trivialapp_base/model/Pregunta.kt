@@ -53,7 +53,47 @@ object ProveedorPreguntas {
             Pregunta("¿Quién fue el primer Capitán América antes de Steve Rogers en el universo alternativo?", "Marvel", "Dificil", "John Walker", "Bucky Barnes", "Sam Wilson", "Isaiah Bradley", "Isaiah Bradley"),
             Pregunta("¿Qué metal compone el escudo del Capitán América?", "Marvel", "Dificil", "Adamantium", "Carbonadio", "Titanio", "Vibranium", "Vibranium"),
             Pregunta("¿Cuál es el verdadero nombre de la Viuda Negra?", "Marvel", "Dificil", "Yelena Belova", "Maria Hill", "Carol Danvers", "Natasha Romanoff", "Natasha Romanoff"),
-            Pregunta("¿Qué organización secreta reemplazó a S.H.I.E.L.D. en algunas historias?", "Marvel", "Dificil", "HYDRA", "A.I.M.", "Roxxon", "S.W.O.R.D.", "S.W.O.R.D.")
+            Pregunta("¿Qué organización secreta reemplazó a S.H.I.E.L.D. en algunas historias?", "Marvel", "Dificil", "HYDRA", "A.I.M.", "Roxxon", "S.W.O.R.D.", "S.W.O.R.D."),
+
+            //Nivel Facil
+            Pregunta("¿Cuál es el Pokémon inicial de tipo fuego de Kanto?", "Pokemon", "Facil", "Vulpix", "Charmander", "Cyndaquil", "Torchic", "Charmander"),
+            Pregunta("¿Qué Pokémon es conocido como el ratón eléctrico?", "Pokemon", "Facil", "Raichu", "Pichu", "Eevee", "Pikachu", "Pikachu"),
+            Pregunta("¿Qué tipo es Pikachu?", "Pokemon", "Facil", "Fuego", "Agua", "Planta", "Eléctrico", "Eléctrico"),
+            Pregunta("¿Cómo se llama el entrenador principal del anime Pokémon?", "Pokemon", "Facil", "Red", "Brock", "Ash Ketchum", "Gary", "Ash Ketchum"),
+            Pregunta("¿Cuál es la evolución de Charmander?", "Pokemon", "Facil", "Charmeleon", "Charizard", "Magmar", "Flareon", "Charmeleon"),
+
+            Pregunta("¿Cómo se llama el dios del trueno en Marvel?", "Marvel", "Facil", "Loki", "Odin", "Thor", "Hela", "Thor"),
+            Pregunta("¿Qué superhéroe usa un escudo?", "Marvel", "Facil", "Iron Man", "Hawkeye", "Captain America", "Falcon", "Captain America"),
+            Pregunta("¿Qué héroe puede encogerse de tamaño?", "Marvel", "Facil", "Wasp", "Hulk", "Ant-Man", "Vision", "Ant-Man"),
+            Pregunta("¿Qué héroe es un genio millonario con una armadura?", "Marvel", "Facil", "Batman", "Iron Man", "War Machine", "Doctor Strange", "Iron Man"),
+            Pregunta("¿Qué héroe se transforma cuando se enfada?", "Marvel", "Facil", "Thor", "Hulk", "Loki", "Drax", "Hulk"),
+
+            //Nivel Medio
+            Pregunta("¿Qué tipo es el Pokémon Gyarados?", "Pokemon", "Medio", "Agua", "Agua/Dragón", "Agua/Volador", "Dragón/Volador", "Agua/Volador"),
+            Pregunta("¿Cuál es la evolución final de Squirtle?", "Pokemon", "Medio", "Wartortle", "Blastoise", "Lapras", "Feraligatr", "Blastoise"),
+            Pregunta("¿Qué objeto revive a un Pokémon debilitado?", "Pokemon", "Medio", "Antídoto", "Éter", "Revivir", "Poción", "Revivir"),
+            Pregunta("¿Qué Pokémon es conocido como el clon de Mew?", "Pokemon", "Medio", "Ditto", "Mewtwo", "Zoroark", "Genesect", "Mewtwo"),
+            Pregunta("¿Qué tipo es súper efectivo contra Dragón?", "Pokemon", "Medio", "Fuego", "Agua", "Planta", "Hada", "Hada"),
+
+            Pregunta("¿Quién es el hermano adoptivo de Thor?", "Marvel", "Medio", "Baldur", "Hela", "Loki", "Fenrir", "Loki"),
+            Pregunta("¿Qué actor interpreta a Iron Man en el UCM?", "Marvel", "Medio", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo", "Robert Downey Jr.", "Robert Downey Jr."),
+            Pregunta("¿Cómo se llama la organización dirigida por Nick Fury?", "Marvel", "Medio", "HYDRA", "A.I.M.", "S.H.I.E.L.D.", "S.W.O.R.D.", "S.H.I.E.L.D."),
+            Pregunta("¿Qué héroe controla la magia?", "Marvel", "Medio", "Scarlet Witch", "Doctor Strange", "Loki", "Vision", "Doctor Strange"),
+            Pregunta("¿Qué héroe viene de Wakanda?", "Marvel", "Medio", "Falcon", "Luke Cage", "Black Panther", "Blade", "Black Panther"),
+
+            //Nivel Dificil
+            Pregunta("¿Qué Pokémon tiene la habilidad Levitación?", "Pokemon", "Dificil", "Golem", "Metagross", "Weezing", "Flygon", "Weezing"),
+            Pregunta("¿Qué Pokémon legendario representa el espacio?", "Pokemon", "Dificil", "Dialga", "Giratina", "Arceus", "Palkia", "Palkia"),
+            Pregunta("¿Cuál es el tipo secundario de Gardevoir?", "Pokemon", "Dificil", "Psíquico", "Hada", "Psíquico/Lucha", "Psíquico/Hada", "Psíquico/Hada"),
+            Pregunta("¿Qué región pertenece Pokémon Negro y Blanco?", "Pokemon", "Dificil", "Kalos", "Galar", "Unova", "Alola", "Unova"),
+            Pregunta("¿Qué Pokémon puede cambiar de forma según el clima?", "Pokemon", "Dificil", "Castform", "Ditto", "Kecleon", "Zoroark", "Castform"),
+
+            Pregunta("¿Quién es el creador de Ultron?", "Marvel", "Dificil", "Hank Pym", "Bruce Banner", "Tony Stark", "Reed Richards", "Hank Pym"),
+            Pregunta("¿Cuál es el nombre real de Hulk?", "Marvel", "Dificil", "Bruce Wayne", "Bruce Banner", "Clark Kent", "Tony Stark", "Bruce Banner"),
+            Pregunta("¿Qué raza es Thanos?", "Marvel", "Dificil", "Asgardiano", "Eterno", "Kree", "Inhumano", "Eterno"),
+            Pregunta("¿Quién mata a Thanos en Avengers: Endgame?", "Marvel", "Dificil", "Iron Man", "Thor", "Captain America", "Scarlet Witch", "Thor"),
+            Pregunta("¿Cómo se llama el martillo de Beta Ray Bill?", "Marvel", "Dificil", "Mjolnir", "Stormbreaker", "Gungnir", "Aesir", "Stormbreaker")
+
         )
     }
 }
