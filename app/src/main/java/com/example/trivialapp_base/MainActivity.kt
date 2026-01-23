@@ -32,7 +32,6 @@ class MainActivity : ComponentActivity() {
                 // Controlador de navegación
                 val navigationController = rememberNavController()
 
-
                 // Instanciamos el ViewModel una vez
 
                 val myViewModel by viewModels<GameViewModel>()
