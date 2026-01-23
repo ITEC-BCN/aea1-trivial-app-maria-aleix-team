@@ -45,6 +45,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.trivialapp_base.Routes
 import com.example.trivialapp_base.ui.theme.AmarilloBotones
 import com.example.trivialapp_base.ui.theme.AzulFondo
 import com.example.trivialapp_base.ui.theme.MoradoTitulo
