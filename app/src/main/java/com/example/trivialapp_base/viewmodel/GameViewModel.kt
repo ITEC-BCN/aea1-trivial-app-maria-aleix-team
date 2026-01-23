@@ -59,7 +59,7 @@ class GameViewModel : ViewModel() {
     }
 
     private fun cargarSiguientePregunta() {
-        avanzarRonda()
+
         preguntaActual = preguntasPartida[indicePreguntaActual]
         respuestasMezcladas = listOf(
             preguntaActual!!.respuesta1,
@@ -73,6 +73,7 @@ class GameViewModel : ViewModel() {
         if (respuestaUsuario == preguntaActual!!.respuestaCorrecta){
             puntuacion++
         }
+        avanzarRonda()
         cargarSiguientePregunta()
     }
 
