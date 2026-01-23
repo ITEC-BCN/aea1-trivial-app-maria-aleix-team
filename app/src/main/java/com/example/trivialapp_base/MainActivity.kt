@@ -33,7 +33,12 @@ class MainActivity : ComponentActivity() {
             TrivialAPP_BaseTheme {
                 // Controlador de navegación
                 val navigationController = rememberNavController()
+                
+                // Instanciamos el ViewModel una vez
+
                 val myViewModel by viewModels<GameViewModel>()
+
+                // Definición de rutas y navegación
                 NavHost(
                     navController = navigationController,
                     startDestination = Routes.Screenmenu.route
@@ -42,15 +47,6 @@ class MainActivity : ComponentActivity() {
                     composable(Routes.Screengame.route) { GameScreen(navigationController, myViewModel) }
                     composable(Routes.Screenresult.route) { ResultScreen(navigationController, myViewModel) }
                 }
-
-
-
-                // Instanciamos el ViewModel una vez
-
-
-
-                // Definición de rutas y navegación
-
 
 
             }

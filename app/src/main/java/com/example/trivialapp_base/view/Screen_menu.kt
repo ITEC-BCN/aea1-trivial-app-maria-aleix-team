@@ -82,10 +82,14 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
                     .border(4.dp, color = MoradoTitulo, CircleShape)
             )
             //dropdown menu
-            MyDropDownMenu()
+            MyDropDownMenu(modifier = Modifier, viewModel)
 
             Button(
-                onClick = { },
+                onClick = {
+
+                    navController.navigate(Routes.Screengame.route)
+                    viewModel.iniciarJuego()},
+
                 modifier = Modifier
                     .width(220.dp)
                     .height(60.dp),
@@ -102,11 +106,10 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
 }
 
 @Composable
-fun MyDropDownMenu(modifier: Modifier = Modifier) {
+fun MyDropDownMenu(modifier: Modifier = Modifier, viewModel: GameViewModel) {
+
     var selectedText by remember { mutableStateOf("Selecciona dificultad") } // Texto inicial
     var expanded by remember { mutableStateOf(false) }
-
-    val dificultades = listOf("Fácil", "Media", "Difícil")
 
     Column(modifier = modifier) {
         Button(
@@ -130,17 +133,33 @@ fun MyDropDownMenu(modifier: Modifier = Modifier) {
                 .width(220.dp)
                 .border(1.dp, Color.Black, RoundedCornerShape(4.dp))
         ) {
-            dificultades.forEach { dificultad ->
                 DropdownMenuItem(
-                    text = { Text(text = dificultad) },
+                    text = { Text(text = "Facil") },
                     onClick = {
-                        selectedText = dificultad // 🔹 Cambia el texto del botón
-                        expanded = false // 🔹 Cierra el menú
+                        selectedText = "Facil"
+                        expanded = false
+                        viewModel.setDificultad("Facil")
+                    }
+                )
+                DropdownMenuItem(
+                    text = { Text(text = "Medio") },
+                    onClick = {
+                        selectedText = "Medio"
+                        expanded = false
+                        viewModel.setDificultad("Medio")
+                    }
+                )
+                DropdownMenuItem(
+                    text = { Text(text = "Dificil") },
+                    onClick = {
+                        selectedText = "Dificil"
+                        expanded = false
+                        viewModel.setDificultad("Dificil")
                     }
                 )
             }
         }
     }
-}
+
 
 

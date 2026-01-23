@@ -7,7 +7,9 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.example.trivialapp_base.Routes
 import com.example.trivialapp_base.model.Pregunta
+import com.example.trivialapp_base.model.ProveedorPreguntas
 
 class GameViewModel : ViewModel() {
     private var preguntasPartida: List<Pregunta> = emptyList()
@@ -39,15 +41,44 @@ class GameViewModel : ViewModel() {
         dificultadSeleccionada = dificultad // Sense .value!
     }
     fun iniciarJuego() {
+        preguntasPartida = ProveedorPreguntas
+            .obtenerPreguntas()
+            .filter{it.dificultad == dificultadSeleccionada}
+            .shuffled()
+            .take(10)
+        preguntaActual = preguntasPartida[indicePreguntaActual]
+        puntuacion = 0
+        indicePreguntaActual = 0
+        juegoTerminado = false
+        respuestasMezcladas = listOf(
+            preguntaActual!!.respuesta1,
+            preguntaActual!!.respuesta2,
+            preguntaActual!!.respuesta3,
+            preguntaActual!!.respuesta4,
+        ).shuffled()
     }
 
     private fun cargarSiguientePregunta() {
+        avanzarRonda()
+        preguntaActual = preguntasPartida[indicePreguntaActual]
+        respuestasMezcladas = listOf(
+            preguntaActual!!.respuesta1,
+            preguntaActual!!.respuesta2,
+            preguntaActual!!.respuesta3,
+            preguntaActual!!.respuesta4,
+        ).shuffled()
     }
 
     fun responderPregunta(respuestaUsuario: String) {
+        if (respuestaUsuario == preguntaActual!!.respuestaCorrecta){
+            puntuacion++
+        }
+        cargarSiguientePregunta()
     }
 
     private fun avanzarRonda() {
+        if (indicePreguntaActual==9) juegoTerminado = true
+        else indicePreguntaActual++
     }
 
     private fun iniciarTimer() {
