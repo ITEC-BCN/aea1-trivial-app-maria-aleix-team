@@ -46,9 +46,9 @@ class GameViewModel : ViewModel() {
             .filter{it.dificultad == dificultadSeleccionada}
             .shuffled()
             .take(10)
+        indicePreguntaActual = 0
         preguntaActual = preguntasPartida[indicePreguntaActual]
         puntuacion = 0
-        indicePreguntaActual = 0
         juegoTerminado = false
         respuestasMezcladas = listOf(
             preguntaActual!!.respuesta1,
@@ -56,10 +56,10 @@ class GameViewModel : ViewModel() {
             preguntaActual!!.respuesta3,
             preguntaActual!!.respuesta4,
         ).shuffled()
+        iniciarTimer()
     }
 
     private fun cargarSiguientePregunta() {
-        avanzarRonda()
         preguntaActual = preguntasPartida[indicePreguntaActual]
         respuestasMezcladas = listOf(
             preguntaActual!!.respuesta1,
@@ -67,23 +67,48 @@ class GameViewModel : ViewModel() {
             preguntaActual!!.respuesta3,
             preguntaActual!!.respuesta4,
         ).shuffled()
+        iniciarTimer()
     }
 
-    fun responderPregunta(respuestaUsuario: String) {
+    fun responderPregunta(respuestaUsuario: String){
         if (respuestaUsuario == preguntaActual!!.respuestaCorrecta){
             puntuacion++
         }
+        avanzarRonda()
         cargarSiguientePregunta()
     }
 
-    private fun avanzarRonda() {
+    private fun avanzarRonda(){
         if (indicePreguntaActual==9) juegoTerminado = true
         else indicePreguntaActual++
     }
 
-    private fun iniciarTimer() {
+    private fun iniciarTimer(){
+            timer?.cancel()
+            timer = object : CountDownTimer(TIEMPO_POR_PREGUNTA, 100) {
+                override fun onTick(millisUntilFinished: Long) {
+                    tiempoRestante = millisUntilFinished.toFloat() / TIEMPO_POR_PREGUNTA
+                }
+
+                override fun onFinish(){
+                    tiempoRestante = 0f
+
+                    avanzarRonda()
+
+                    if(indicePreguntaActual < 9){
+
+                        cargarSiguientePregunta()
+                    }
+                    else {
+                        juegoTerminado = true
+                    }
+                }
+            }.start()
+        }
+
+        override fun onCleared(){
+            super.onCleared()
+            timer?.cancel()
+        }
     }
 
-    override fun onCleared() {
-    }
-}
