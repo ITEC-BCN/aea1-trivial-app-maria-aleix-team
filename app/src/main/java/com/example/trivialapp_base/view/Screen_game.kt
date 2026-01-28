@@ -28,6 +28,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -54,7 +56,9 @@ fun GameScreen(navController: NavController, viewModel: GameViewModel) {
         ) {
             Text("Round ${viewModel.indicePreguntaActual+1}/10",
                 color = MoradoTitulo,
-                fontSize = 25.sp
+                fontSize = 36.sp,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive
             )
 
             Image(
@@ -67,12 +71,11 @@ fun GameScreen(navController: NavController, viewModel: GameViewModel) {
                     .border(4.dp, color = MoradoTitulo, CircleShape)
             )
 
-            Spacer(modifier = Modifier.height(10.dp))
-
             Text(viewModel.preguntaActual!!.pregunta,
                 color = MoradoTitulo,
                 fontSize = 25.sp,
                 textAlign = TextAlign.Center,
+                fontFamily = FontFamily.Monospace,
                 modifier = Modifier.fillMaxWidth()
             )
 
@@ -147,11 +150,10 @@ fun GameScreen(navController: NavController, viewModel: GameViewModel) {
             Spacer(modifier = Modifier.height(16.dp))
 
             LinearProgressIndicator(
-                progress = { viewModel.tiempoRestante},
+                progress = { viewModel.tiempoRestante },
                 color = Color.Blue,
                 trackColor = Color.LightGray
             )
             if (viewModel.juegoTerminado) navController.navigate(Routes.Screenresult.route)
         }
-
     }}
