@@ -65,10 +65,11 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
             verticalArrangement = Arrangement.spacedBy(20.dp)
         ) {
             Text(
-                text = " Trivia Masters: Pokémon & Marvel ",
+                text = "  Trivial Masters: Pokémon & Marvel",
+                Modifier.padding(start = 65.dp, top = 0.dp, end = 55.dp, bottom = 0.dp),
                 style = TextStyle(
                     color = MoradoTitulo,
-                    fontSize = 25.sp,
+                    fontSize = 40.sp,
                     fontWeight = FontWeight.Bold,
                     fontFamily = FontFamily.Cursive
                 )
