@@ -82,7 +82,7 @@ object ProveedorPreguntas {
             Pregunta("¿Qué héroe viene de Wakanda?", "Marvel", "Medio", "Falcon", "Luke Cage", "Black Panther", "Blade", "Black Panther"),
 
             //Nivel Dificil
-            Pregunta("¿Qué Pokémon tiene la habilidad Levitación?", "Pokemon", "Dificil", "Golem", "Metagross", "Weezing", "Flygon", "Weezing"),
+            Pregunta("¿Qué Pokémon tiene la habilidad Levitación?", "Pokemon", "Dificil", "Golem", "Metagross", "Weezing", "Braviary", "Weezing"),
             Pregunta("¿Qué Pokémon legendario representa el espacio?", "Pokemon", "Dificil", "Dialga", "Giratina", "Arceus", "Palkia", "Palkia"),
             Pregunta("¿Cuál es el tipo secundario de Gardevoir?", "Pokemon", "Dificil", "Psíquico", "Hada", "Psíquico/Lucha", "Psíquico/Hada", "Psíquico/Hada"),
             Pregunta("¿Qué región pertenece Pokémon Negro y Blanco?", "Pokemon", "Dificil", "Kalos", "Galar", "Unova", "Alola", "Unova"),
