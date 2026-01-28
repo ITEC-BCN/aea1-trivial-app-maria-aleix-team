@@ -88,7 +88,6 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
 
             Button(
                 onClick = {
-
                     navController.navigate(Routes.Screengame.route)
                     viewModel.iniciarJuego()},
 
