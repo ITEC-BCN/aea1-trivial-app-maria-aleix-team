@@ -147,9 +147,11 @@ fun GameScreen(navController: NavController, viewModel: GameViewModel) {
             Spacer(modifier = Modifier.height(16.dp))
 
             LinearProgressIndicator(
-                progress = { 0f },
-                color = Color.LightGray,
-                trackColor = Color.Blue
+                progress = { viewModel.tiempoRestante},
+                color = Color.Blue,
+                trackColor = Color.LightGray
             )
+            if (viewModel.juegoTerminado) navController.navigate(Routes.Screenresult.route)
         }
+
     }}
