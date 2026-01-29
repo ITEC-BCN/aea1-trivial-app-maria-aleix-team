@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="AzulFondo">#FF7DD5DC</color>
+    <color name="MoradoTitulo">#FF522081</color>
+    <color name="NaranjaBotones">#FFff6200</color>
+    <color name="AmarilloBotones">#FFffde59</color>
 </resources>
