@@ -34,18 +34,34 @@ class GameViewModel : ViewModel() {
     var dificultadSeleccionada by mutableStateOf("Facil")
         private set
 
+    var categoriaSeleccionada by mutableStateOf("General")
+        private set
+
     private var timer: CountDownTimer? = null
     private val TIEMPO_POR_PREGUNTA = 10000L // 10 segons
 
     fun setDificultad(dificultad: String) {
         dificultadSeleccionada = dificultad // Sense .value!
     }
+
+    fun setCategoria(categoria: String) {
+        categoriaSeleccionada = categoria // Sense .value!
+    }
     fun iniciarJuego() {
-        preguntasPartida = ProveedorPreguntas
-            .obtenerPreguntas()
-            .filter{it.dificultad == dificultadSeleccionada}
-            .shuffled()
-            .take(10)
+        if (categoriaSeleccionada!="General") {
+            preguntasPartida = ProveedorPreguntas
+                .obtenerPreguntas()
+                .filter { it.dificultad == dificultadSeleccionada && it.categoria == categoriaSeleccionada}
+                .shuffled()
+                .take(10)
+        }
+        else{
+            preguntasPartida = ProveedorPreguntas
+                .obtenerPreguntas()
+                .filter { it.dificultad == dificultadSeleccionada }
+                .shuffled()
+                .take(10)
+        }
         indicePreguntaActual = 0
         preguntaActual = preguntasPartida[indicePreguntaActual]
         puntuacion = 0
