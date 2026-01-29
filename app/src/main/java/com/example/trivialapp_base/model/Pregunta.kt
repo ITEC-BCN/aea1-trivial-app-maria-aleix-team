@@ -147,6 +147,32 @@ object ProveedorPreguntas {
             Pregunta("¿Qué villano es el Titán Loco?", "Marvel", "Dificil", "Ultron", "Galactus", "Thanos", "Loki", "Thanos"),
             Pregunta("¿Qué gema es verde?", "Marvel", "Dificil", "Mente", "Tiempo", "Espacio", "Poder", "Tiempo"),
             Pregunta("¿Quién fundó los Vengadores?", "Marvel", "Dificil", "Nick Fury", "Iron Man", "Thor", "Capitán América", "Nick Fury"),
+
+            //Extrema Pokemon
+            Pregunta("¿Qué Pokémon ha ganado el mundial?", "Pokemon", "Extrema", "Dragonite", "Excadrill", "Pachirisu", "Calyrex Jinete Glaciar", "Pachirisu"),
+            Pregunta("¿Qué acción tiene mas prioridad en el orden de turno acualmente?", "Pokemon", "Extrema", "Usar Protección", "Cambiar de Pokémon", "Usar Persecución", "Usar Refuerzo", "Cambiar de Pokémon"),
+            Pregunta("¿Qué nombre icónico tiene un montañero en la Calle Victoria de Teselia?", "Pokemon", "Extrema", "Ibai", "Lionel", "Link", "Vegeta", "Ibai"),
+            Pregunta("¿Qué Pokemon evoluciona a su siguiente fase por amistad?", "Pokemon", "Extrema", "Happiny", "Pawmo", "Burmy", "Swadloon", "Swadloon"),
+            Pregunta("¿Qué efecto de estado no fue nerfeado, de ninguna forma, del paso de quinta a sexta generación?", "Pokemon", "Extrema", "Congelación", "Parálisis", "Confusión", "Quemaduras", "Congelación"),
+            Pregunta("¿Què pokémon es originario de Hoenn?", "Pokemon", "Extrema", "Slugma", "Skarmory", "Meditite", "Burmy", "Meditite"),
+            Pregunta("¿Cuál es el pokémon que ocupa la posicion 702 de la Pokédex?", "Pokemon", "Extrema", "Goomy", "Sligoo", "Dedenne", "Hawlucha", "Hawlucha"),
+            Pregunta("¿Cual fue el último pokémon que evolucionó Ash, en el anime?", "Pokemon", "Extrema", "Dragonite", "Sirfetch'd", "Lucario", "Gengar", "Sirfetch'd"),
+            Pregunta("¿Qué Pokémon tiene más victorias en mundiales?", "Pokemon", "Extrema", "Salamance", "Rayquaza", "Kyogre", "Garchomp", "Salamance"),
+            Pregunta("¿Qué Pokémon comparte número de la pokédex nacional i estadísticas base totales?", "Pokemon", "Extrema", "Makuhita", "Metang", "Conkeldurr", "Archeops", "Archeops"),
+
+            //Extrema Marvel
+            Pregunta("¿Cuál fue el primer superhéroe en morir permanentemente en los cómics principales de Marvel?", "Marvel", "Extrema", "Captain Marvel (Mar-Vell)", "Jean Grey", "Gwen Stacy", "Vision", "Captain Marvel (Mar-Vell)"),
+            Pregunta("¿En qué cómic apareció por primera vez Loki en Marvel?", "Marvel", "Extrema", "Journey Into Mystery #85", "Thor #1", "Avengers #1", "Tales to Astonish #10", "Journey Into Mystery #85"),
+            Pregunta("¿Qué entidad cósmica representa la encarnación literal de la Muerte en el universo Marvel?", "Marvel", "Extrema", "Lady Death", "Oblivion", "Death", "Infinity", "Death"),
+            Pregunta("¿Cómo se llama el martillo encantado que usó Thor cuando Mjolnir fue destruido en los cómics, antes de Stormbreaker?", "Marvel", "Extrema", "Jarnbjorn", "Odinblade", "Godslayer", "Thunderstrike", "Jarnbjorn"),
+            Pregunta("¿Qué personaje fue el primer mutante cronológicamente nacido en la historia del universo Marvel?", "Marvel", "Extrema", "Apocalypse", "Namor", "Selene", "En Sabah Nur", "Selene"),
+            Pregunta("¿Qué alias utilizó Loki cuando se hizo pasar por Odin en los cómics?", "Marvel", "Extrema", "All-Father", "Odin Borson", "Loki Allfather", "Loki Odinson", "Odin Borson"),
+            Pregunta("En los cómics, ¿qué hijo de Loki se convierte en uno de los más grandes villanos asgardianos?", "Marvel", "Extrema", "Jormungand", "Fenris", "Angrboda", "Narvi", "Fenris"),
+            Pregunta("¿Qué versión de Loki se convierte en ‘Kid Loki’ tras ser asesinado por Thor en Journey Into Mystery?", "Marvel", "Extrema", "Loki Laufeyson original", "Loki de la Tierra-616", "Loki de la línea temporal de Young Avengers", "Loki de los Guardianes del Tiempo", "Loki Laufeyson original"),
+            Pregunta("En los cómics, Loki ha sido miembro temporal de los Vengadores bajo qué nombre?", "Marvel", "Extrema", "The Trickster", "Fandral", "Unworthy Loki", "Goblin King", "The Trickster"),
+            Pregunta("¿Qué entidad cósmica manipuló a Loki para iniciar la Guerra Asgardiana en los cómics?", "Marvel", "Extrema", "Mephisto", "Dormammu", "Kang el Conquistador", "El Tribunal Viviente", "Mephisto")
+
+
             )
     }
 }
