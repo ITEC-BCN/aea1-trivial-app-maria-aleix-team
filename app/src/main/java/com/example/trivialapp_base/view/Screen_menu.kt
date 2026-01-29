@@ -84,7 +84,8 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
                     .border(4.dp, color = MoradoTitulo, CircleShape)
             )
             //dropdown menu
-            MyDropDownMenu(modifier = Modifier, viewModel)
+            DificultadDropDownMenu(modifier = Modifier, viewModel)
+            CategoryDropDownMenu(modifier = Modifier, viewModel)
 
             Button(
                 onClick = {
@@ -107,9 +108,9 @@ fun MenuScreen(navController: NavController, viewModel: GameViewModel) {
 }
 
 @Composable
-fun MyDropDownMenu(modifier: Modifier = Modifier, viewModel: GameViewModel) {
+fun DificultadDropDownMenu(modifier: Modifier = Modifier, viewModel: GameViewModel) {
 
-    var selectedText by remember { mutableStateOf("Selecciona dificultad") } // Texto inicial
+    var selectedText by remember { mutableStateOf("Selecciona Dificultad") } // Texto inicial
     var expanded by remember { mutableStateOf(false) }
 
     Column(modifier = modifier) {
@@ -158,9 +159,66 @@ fun MyDropDownMenu(modifier: Modifier = Modifier, viewModel: GameViewModel) {
                         viewModel.setDificultad("Dificil")
                     }
                 )
+                DropdownMenuItem(
+                    text = { Text(text = "Extrema") },
+                    onClick = {
+                        selectedText = "Extrema"
+                        expanded = false
+                        viewModel.setDificultad("Extrema")
+                    }
+                )
             }
         }
     }
+@Composable
+fun CategoryDropDownMenu(modifier: Modifier = Modifier, viewModel: GameViewModel) {
 
+    var selectedText by remember { mutableStateOf("Selecciona Categoria") } // Texto inicial
+    var expanded by remember { mutableStateOf(false) }
 
+    Column(modifier = modifier) {
+        Button(
+            onClick = { expanded = true },
+            modifier = Modifier
+                .width(220.dp)
+                .height(60.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = NaranjaBotones,
+                contentColor = MoradoTitulo
+            ),
+            border = BorderStroke(5.dp, AmarilloBotones)
+        ) {
+            Text(text = selectedText) // 🔹 Muestra la opción seleccionada
+        }
 
+        DropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false },
+            modifier = Modifier
+                .width(220.dp)
+                .border(1.dp, Color.Black, RoundedCornerShape(4.dp))
+        ) {
+            DropdownMenuItem(
+                text = { Text(text = "General") },
+                onClick = {
+                    selectedText = "General"
+                    expanded = false
+                    viewModel.setCategoria("General")
+                }
+            )
+            DropdownMenuItem(
+                text = { Text(text = "Pokémon") },
+                onClick = {
+                    selectedText = "Pokémon"
+                    expanded = false
+                    viewModel.setCategoria("Pokemon")
+                }
+            )
+            DropdownMenuItem(
+                text = { Text(text = "Marvel") },
+                onClick = {
+                    selectedText = "Marvel"
+                    expanded = false
+                    viewModel.setCategoria("Marvel")
+                }
+            )}}}
